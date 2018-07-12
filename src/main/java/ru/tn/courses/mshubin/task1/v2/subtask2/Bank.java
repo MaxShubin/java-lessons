@@ -24,7 +24,6 @@ public class Bank {
     }
 
     public int isCourse() {
-
         return course;
     }
 
@@ -40,10 +39,11 @@ public class Bank {
                 '}';
     }
 
-    public static Comparator <Bank> IIIOPA = new Comparator<Bank>() {
+    public static Comparator<Bank> IIIOPA = new Comparator<Bank>() {
         @Override
         public int compare(Bank bank1, Bank bank2) {
             return (int) (bank1.getCourse() - bank2.getCourse());
         }
     };
 }
+

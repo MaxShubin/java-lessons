@@ -17,11 +17,11 @@ public class Main {
             for (int i = 0; i < kolEl; i++) {
                 arr[i] = Integer.parseInt(reader.readLine());
             }
+
             int arrNol[] = createArray(arr, kolEl);
         } else {
             System.out.println("Количество элементов меньше 0");
         }
-
     }
 
     public static int[] createArray(int arr[], int kolEl) {

@@ -19,6 +19,7 @@ public class Main {
                 arr[i] = arr[i] * (-1);
             }
         }
+
         System.out.println("Исхoдный массив:");
         System.out.println(Arrays.toString(arr));
         if (arr[0] > 0) {

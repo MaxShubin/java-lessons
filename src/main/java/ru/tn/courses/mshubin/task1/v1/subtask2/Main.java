@@ -5,30 +5,29 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        int size;
+        int time;
         System.out.println("Введите количество покупателей");
         Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-
+        size = scanner.nextInt();
         System.out.println("За сколько минут обслуживают одного покупателя:");
-        int tj = scanner.nextInt();
-
-        int [] a = new int [n];
-        for (int i = 0; i < n; i++){
-            a[i] = i + 1;
+        time = scanner.nextInt();
+        int[] arr = new int[size];
+        for (int i = 0; i < size; i++) {
+            arr[i] = i + 1;
         }
 
         System.out.println("Введите номер покупателя в очереди");
-        int numberofclient = scanner.nextInt();
-        tj = (numberofclient - 1) * tj;
-
-        while ((tj - 60) >= 0) {
-            tj = tj - 60;
+        int numberOfClient = scanner.nextInt();
+        time = (numberOfClient - 1) * time;
+        while ((time - 60) >= 0) {
+            time = time - 60;
         }
 
-        if (numberofclient == 1) {
+        if (numberOfClient == 1) {
             System.out.println("Первый человек в очереди уже обслуживается");
         } else {
-            System.out.println("Время ожидания покупателя под номером " + numberofclient + " равно "  + tj + " минут");
+            System.out.println("Время ожидания покупателя под номером " + numberOfClient + " равно " + time + " минут");
         }
     }
 }

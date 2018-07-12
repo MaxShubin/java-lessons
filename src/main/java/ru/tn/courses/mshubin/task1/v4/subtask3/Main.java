@@ -30,6 +30,7 @@ public class Main {
             }
             arr[j + 1] = key;
         }
+
         System.out.println("Полученный массив: \n" + Arrays.toString(arr));
     }
 }

@@ -15,6 +15,7 @@ public class Main {
             System.out.println("Массив не является последовательностью чисел, т.к. состоит из одного элемента");
             System.exit(0);
         }
+
         int[] arr = new int[size];
         System.out.println("Введите элементы массива");
         for (int i = 0; i < size; i++) {
@@ -34,7 +35,7 @@ public class Main {
         if (flag == true) {
             System.out.println("Массив возрастающий");
         } else {
-            System.out.println("Массив don'd возрастающий");
+            System.out.println("Массив не является возрастающим");
         }
     }
 }
